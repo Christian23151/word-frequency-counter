@@ -1,0 +1,24 @@
+Practice Set 02: Word Frequency Count Case Study
+
+Step 1: Create a Repository on Github
+
+* Log in to you Github account (or create one if you dont have an account yet).
+* Click on the "+" sign in the upper-right corner of the Github
+dashboard and select "New repository."
+* Choose a repository name(e.g., "word-frequency-counter").
+* Optionally the visibility of your repository.
+* You can skip the other options for now and click the "Crete repository" button.
+
+Step 2: Clone the Provided Repository
+
+* Visit the Provided repository URL: https://www.google.com/url?q=https://github.com/CC6-Pancake/word-frequency-counter.git
+* Click the "Code" button, and you will see a URL (e.g., "https://www.google.com/url?q=https://github.com/CC6-Pancake/word-frequency-counter.git") that you can use to clone the repository.
+* Clone the repository using the git clone command followed by the repository URL.
+
+Step 3: Modify the Code and Push
+
+* Open the cloned "word-frequency-counter" directory on your local machine using a code editory or IDE of your choice.
+* Read the requirments in the README.md file to understand what needs to be implemented.
+* Write the PHP code to implement the Word Frequency Counter bassed on the provided requirements.
+* Test your code to ensure it works correctly.
+* Commit and Push Changes 

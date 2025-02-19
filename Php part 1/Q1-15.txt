@@ -1,0 +1,176 @@
+Lesson 1: Outputting using echo,print,print_r,var_dump
+print_r('Hello');
+print_r([1,2,3,]);
+
+class Person {
+    public $name;
+    public $age;
+}
+
+$person = new Person();
+$person->name = 'Alice';
+$person-> age = 25;
+
+Question 1: What is the output of print_r($person);?
+The Output is:
+Person Object
+(
+    [name] => Alice
+    [age] => 25
+)
+
+
+Question 2: What is the output of var_dump($person);?
+The Output is:
+object(Person)#1 (2) {
+  ["name"]=>
+  string(5) "Alice"
+  ["age"]=>
+  int(25)
+}
+
+
+Lesson 2: Variables & Data Types
+
+$name = 'Brad';
+$age = 40;
+$hasKids = true;
+$cashOnHand = 10.5;
+
+Question 3: What is the output of var_dump($cashOnHand);?
+The Output is:
+float(10.5)
+
+Adding Variables to strings
+
+echo "$name is $age years old;
+echo "${name} is ${age} years old;
+echo '<h3>' . $name . ' is ' . $age . ' years old</h3>';
+
+Question 4: What character is used to concatenate strings? Answer is the concatenate used in Php is (.) or dot
+
+Constant variables
+
+A. Using define() functions
+
+Syntax:
+define("CONSTANT_NAME", "constant_value");
+
+Examples:
+define('HOST', 'localhost');
+define('USER', 'root');
+
+Question 5: What is the output of echo HOST;? localhost
+Question 6: How will you define in PHP the variable PI with value 3.1416? define('PI', 3.1416);
+
+$colors = ["red", "green", "blue"];
+echo $colors[0];
+$numbers = [1, 2, 3, 4, 5];
+
+Lesson 3: Arrays
+
+Question 7: What is the output of echo $numbers[3] + $numbers[4];? Answers is 9
+Question 8: What is the output of echo $colors[3];? Answer is 0 or undefined array or the index 3 is not exist.
+
+2. Associative Arrays
+
+$person = [
+    "first_name" => "John",
+    "last_name" => "Doe",
+    "age" => 30
+];
+echo $person["first_name];
+
+Question 9: What are the keys in $person array? Answer is John
+
+$colors = [
+    1 => 'red',
+    2 => 'green',
+    3 => 'blue',
+];
+
+Question 10: In PHP, how will you change the green into white in $colors array? $colors[2] = 'white';
+
+$hex = [
+    'red' => '#f00',
+    'green' => '#0f0',
+    'blue' => '#00f',
+];
+
+Question 11: What is the output of echo $hex['red'];? Answer is #f00
+
+Multidimensional Arrays
+
+$matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+echo $matrix[1][2]; // Access a specific element in the
+multidimensional array
+
+Question 12: What is the output of echo $matrix[1][2];? Answer is 6
+
+$person 1 = [
+    'first_name' => 'Maeve',
+    'last_name' => 'Reid',
+    'emai' => 'reid@gmail.com',
+];
+
+// Array of people
+
+$people = [
+    $person1, // [...$person1]
+    [
+        'first_name' => 'John',
+        'last_name' => 'Doe',
+        'email' => 'john@gmail.com',
+    ],
+    [
+        'first_name' => 'Jane',
+        'last_name' => 'Doe',
+        'email' => 'jane@gmai.com',
+    ],
+];
+
+Question 13: What is the output of echo $people[0]['first_name'];? Answer is Maeve
+Question 14: What is the output of echo $people[2]['email'];? Answer is jane@gmail.com
+
+Array functions
+
+* count() -get arrey length
+
+$fruits = ['apple', 'banana', 'orange'];
+echo count($fruits);
+
+* in_array() - search array
+
+$fruits = ['apple', 'banana', 'orange'];
+echo in_array('banana', $fruits);
+
+* array_push() and array_unshift() - add element to an array
+
+$fruits[] = 'grape';
+array_push($fruits, 'mango', 'raspberry');
+array_unshift($fruits, 'kiwi'); // Adds to the beginning
+
+* array pop() and array_shift() - remove element from array
+
+array_pop($fruits); // Removes last
+array_shift($fruits);// Remove first
+
+* unset() - remove specific element
+
+unset($fruits[2]);
+
+* array_chunk() -split array
+
+$chunkedArray = array_chunk($fruits,2);
+
+Question 15: What is the output of var_dump($chunkedArray);? 
+The Output is:
+array(3) {
+  [0] => array(2) { [0] => "apple", [1] => "banana" }
+  [1] => array(2) { [0] => "grape", [1] => "mango" }
+}
+
