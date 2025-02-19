@@ -1,6 +1,7 @@
 # Word Frequency Counter
 
 Features
+
 User Input: Paste any text into the provided textarea for analysis.
 
 Tokenization: Processes the input text by converting it to lowercase, removing punctuation, and splitting it into individual words.
